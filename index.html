@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Happy Birthday Setu</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#6a5acd,#ff69b4);color:#fff;overflow:hidden}
+.slide{display:none;height:100vh;align-items:center;justify-content:center;flex-direction:column;padding:24px;text-align:center}
+.active{display:flex} img{width:240px;height:320px;object-fit:cover;border-radius:20px;box-shadow:0 10px 30px #0006}
+button{padding:12px 20px;border:none;border-radius:999px;background:#fff;color:#d63384;font-weight:bold;margin-top:18px}
+.small{position:fixed;bottom:18px;right:18px}
+h1{margin:10px 0} p{max-width:320px;line-height:1.6}
+</style></head><body>
+<audio id='bgm' loop src='music.mp3'></audio>
+<div class='slide active'><h1>🎉 Happy Birthday</h1><h2>সেতু 💙</h2><p>আজকের দিনটা শুধু তোমার হাসির জন্য।</p><button onclick="document.getElementById('bgm').play();next()">✨ শুরু করি</button></div>
+<div class='slide'><img src='setu.jpg'><h2>তোমার হাসিটাই সবচেয়ে সুন্দর</h2><button class='small' onclick='next()'>Next ➜</button></div>
+<div class='slide'><p>জীবনের প্রতিটি সকাল তোমার জন্য নতুন আনন্দ, শান্তি আর অসংখ্য সুন্দর মুহূর্ত নিয়ে আসুক।</p><button class='small' onclick='next()'>Next ➜</button></div>
+<div class='slide'><h2>🌸 আমার শুভেচ্ছা</h2><p>তুমি যেন সব স্বপ্ন পূরণ করতে পারো, আর সবসময় এমনই উজ্জ্বল ও প্রাণবন্ত থাকো।</p><button class='small' onclick='next()'>Next ➜</button></div>
+<div class='slide'><h1>🎂 শুভ জন্মদিন, সেতু!</h1><p>May your smile never fade. Wishing you happiness today and always. 💖</p></div>
+<script>let i=0;const s=[...document.querySelectorAll('.slide')];function next(){s[i].classList.remove('active');i=Math.min(i+1,s.length-1);s[i].classList.add('active');}</script>
+</body></html>
