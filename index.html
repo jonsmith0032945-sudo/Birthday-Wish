@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#28143f">
+<title>শুভ জন্মদিন নিপা! 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--pink:#ff77b7;--rose:#ffb2d5;--purple:#9b72df;--deep:#21102f;--cream:#fff4fb}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cream);font-family:'Hind Siliguri',sans-serif;background:radial-gradient(circle at 15% 15%,#653b82 0,transparent 32%),radial-gradient(circle at 85% 40%,#672c70 0,transparent 35%),linear-gradient(145deg,#170d28,#32133f 55%,#1b102f);min-height:100vh;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:36px 36px;z-index:-1}
+button,input{font:inherit}
+button{cursor:pointer}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:36px 18px;position:relative;overflow:hidden}
+.hero-inner{max-width:850px;z-index:1}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;color:#ffd0e7;font-size:.82rem}
+h1{font-family:'Playfair Display','Hind Siliguri',serif;font-size:clamp(3rem,10vw,6.8rem);line-height:1.08;margin:12px 0;color:#fff;text-shadow:0 0 24px #ff79c5,0 0 55px #a96bdb}
+.hero p{font-size:clamp(1rem,2.8vw,1.3rem);color:#f9dced;max-width:650px;margin:18px auto 28px}
+.pill{border:1px solid #ffc0df;background:linear-gradient(120deg,#ff70b4,#9864dc);color:white;border-radius:999px;padding:13px 25px;box-shadow:0 8px 28px #f36bb555;transition:.2s}
+.pill:hover{transform:translateY(-3px);filter:brightness(1.1)}
+.sparkle{position:absolute;color:#ffd7ec;animation:twinkle 2s infinite alternate}
+@keyframes twinkle{to{opacity:.25;transform:scale(.6) rotate(35deg)}}
+.float-heart{position:fixed;bottom:-40px;z-index:0;pointer-events:none;animation:floatUp linear forwards;opacity:.7}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+section{padding:65px 18px;position:relative;z-index:1}
+.wrap{max-width:980px;margin:auto}
+.section-title{text-align:center;font-size:clamp(2rem,6vw,3rem);margin:0 0 12px;color:#ffd4e9}
+.sub{text-align:center;color:#eac9e6;margin:0 auto 34px;max-width:650px}
+.card{background:linear-gradient(145deg,#ffffff17,#ffffff08);border:1px solid #ffffff2b;border-radius:25px;padding:clamp(20px,4vw,34px);box-shadow:0 18px 55px #10071955;backdrop-filter:blur(12px)}
+.cake-area{text-align:center}
+.cake{position:relative;width:210px;height:180px;margin:35px auto 20px}
+.plate{position:absolute;bottom:0;left:0;width:210px;height:17px;border-radius:50%;background:linear-gradient(#fff,#d8c5ec);box-shadow:0 8px 15px #0005}
+.layer{position:absolute;left:20px;width:170px;height:58px;border-radius:14px 14px 10px 10px;background:linear-gradient(90deg,#f6a5cf,#ffe1f0 48%,#e87cb7);box-shadow:inset 0 -8px #d75c9c}
+.layer.bottom{bottom:12px}.layer.top{bottom:65px;left:38px;width:134px;height:48px;background:linear-gradient(90deg,#bd91ed,#f1d8ff 50%,#a879d7);box-shadow:inset 0 -7px #9663c5}
+.icing{position:absolute;bottom:98px;left:38px;width:134px;height:17px;border-radius:50%;background:#fff0fa}
+.candle{position:absolute;bottom:111px;left:101px;width:9px;height:35px;border-radius:4px;background:repeating-linear-gradient(45deg,#fff 0 5px,#ff6fae 5px 10px)}
+.flame{position:absolute;bottom:144px;left:99px;width:13px;height:20px;background:radial-gradient(ellipse at 50% 70%,#fff8a8 0 22%,#ffb347 45%,#ff6a5c 75%);border-radius:50% 50% 45% 45%;filter:drop-shadow(0 0 10px #ffc34d);transform-origin:50% 100%;animation:flicker .15s infinite alternate}
+@keyframes flicker{to{transform:rotate(5deg) scale(.9)}}
+.cake.blown .flame{display:none}
+.cake-hint{font-size:.95rem;color:#f6d9ed}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.secondary{border:1px solid #f7b6d8;color:#ffe6f3;background:#ffffff12;border-radius:999px;padding:10px 20px}
+.message{font-size:1.15rem;line-height:1.95;text-align:center;color:#fff0f8}
+.message strong{color:#ffc2df}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.photo{aspect-ratio:1/1;border:1px dashed #f4b4d6;border-radius:18px;display:grid;place-items:center;overflow:hidden;background:#ffffff0b;color:#f8d6eb;text-align:center;padding:10px;position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.photo span{z-index:1;text-shadow:0 2px 5px #000}
+.upload{display:inline-block;margin:0 auto 20px}
+.upload input{display:none}
+.music-row{display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;text-align:center}
+.music-row input{max-width:230px;color:#f9dced}
+footer{text-align:center;padding:35px 15px 55px;color:#dcb8d7}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:5}
+.small{font-size:.88rem;color:#dfc3dd}
+@media(max-width:480px){.cake{transform:scale(.9);margin-top:20px;margin-bottom:5px}.card{border-radius:20px}}
+</style>
+</head>
+<body>
+<canvas id="confetti"></canvas>
+<header class="hero" id="top">
+  <span class="sparkle" style="top:13%;left:12%;font-size:30px">✦</span>
+  <span class="sparkle" style="top:24%;right:13%;font-size:22px;animation-delay:.6s">✧</span>
+  <span class="sparkle" style="bottom:17%;left:19%;font-size:24px;animation-delay:1s">✦</span>
+  <span class="sparkle" style="bottom:22%;right:16%;font-size:30px;animation-delay:.3s">✧</span>
+  <div class="hero-inner">
+    <div class="eyebrow">A little surprise, made with love</div>
+    <h1>শুভ জন্মদিন<br>নিপা! 💗</h1>
+    <p>আজকের দিনটা তোমার মতোই সুন্দর, মায়াময় আর রঙিন হোক। তোমার প্রতিটি স্বপ্ন পূরণ হোক হাসি আর আনন্দে।</p>
+    <button class="pill" onclick="document.querySelector('#surprise').scrollIntoView({behavior:'smooth'})">তোমার সারপ্রাইজ খুলে দেখো ✨</button>
+  </div>
+</header>
+
+<section id="surprise">
+ <div class="wrap">
+  <h2 class="section-title">A Cake Just for You 🎂</h2>
+  <p class="sub">একটা ছোট্ট ইচ্ছে করো, তারপর মোমবাতিটা নিভিয়ে দাও!</p>
+  <div class="card cake-area">
+   <div class="cake" id="cake">
+    <div class="flame"></div><div class="candle"></div><div class="icing"></div>
+    <div class="layer top"></div><div class="layer bottom"></div><div class="plate"></div>
+   </div>
+   <div class="cake-hint" id="cakeHint">নিপা, তোমার মনের ইচ্ছেটা মনে মনে চেয়ে নাও 💫</div>
+   <div class="actions">
+    <button class="pill" id="blowBtn">মোমবাতি নিভাও 🌬️</button>
+    <button class="secondary" id="againBtn">আবার জ্বালাও 🕯️</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <h2 class="section-title">একটু মনের কথা 💌</h2>
+  <p class="sub">বন্ধুত্বের জন্য ছোট্ট একটি শুভেচ্ছা</p>
+  <div class="card message">
+   প্রিয় <strong>নিপা</strong>,<br>
+   তোমার জন্মদিনে রইল অনেক অনেক শুভেচ্ছা ও ভালোবাসা। জীবনের প্রতিটি সকাল তোমার জন্য নতুন আশা নিয়ে আসুক, প্রতিটি দিন ভরে উঠুক সুন্দর মুহূর্তে। তোমার মুখের হাসিটা যেন কখনো মলিন না হয়।<br>
+   <strong>সবসময় ভালো থেকো, নিজের মতো করে উজ্জ্বল থেকো।</strong><br>
+   শুভ জন্মদিন, বন্ধু! 🌷
+  </div>
+ </div>
+</section>
+
+<section id="memories">
+ <div class="wrap">
+  <h2 class="section-title">আমাদের সুন্দর মুহূর্ত 📸</h2>
+  <p class="sub">নিচের বাটনে চাপ দিয়ে তোমাদের ছবি যোগ করো। ছবিগুলো এই ব্রাউজারেই দেখা যাবে।</p>
+  <div class="card" style="text-align:center">
+   <label class="pill upload">ছবি যোগ করো <input id="photoInput" type="file" accept="image/*" multiple></label>
+   <div class="gallery" id="gallery">
+    <div class="photo"><span>তোমাদের প্রথম ছবি এখানে 💗</span></div>
+    <div class="photo"><span>একটি সুন্দর স্মৃতি ✨</span></div>
+    <div class="photo"><span>আরও একটি মুহূর্ত 🌸</span></div>
+   </div>
+   <p class="small">নোট: ছবি স্থায়ীভাবে ওয়েবসাইটে রাখতে হলে ছবিগুলো GitHub repository-তে আপলোড করে HTML-এর gallery অংশে ফাইলের নাম বসাতে হবে।</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <h2 class="section-title">একটু গান হোক 🎶</h2>
+  <p class="sub">নিজের পছন্দের Birthday song বা মিউজিক ফাইল বেছে নাও।</p>
+  <div class="card music-row">
+   <label class="pill upload">গান বেছে নাও 🎵 <input id="musicInput" type="file" accept="audio/*"></label>
+   <button class="secondary" id="musicBtn">গান চালু করো ▶</button>
+   <audio id="music" loop></audio>
+   <div class="small" id="musicStatus">প্রথমে একটি MP3 ফাইল নির্বাচন করো।</div>
+  </div>
+ </div>
+</section>
+
+<footer>Made with 💗 for Nipa · 07 November 2026<br><span class="small">তোমার দিনটা হোক অসাধারণ!</span></footer>
+
+<script>
+const cake=document.getElementById('cake'), hint=document.getElementById('cakeHint');
+document.getElementById('blowBtn').addEventListener('click',()=>{
+ cake.classList.add('blown');hint.textContent='ইয়েই! তোমার সব সুন্দর ইচ্ছে পূরণ হোক! 🎉';burst();
+});
+document.getElementById('againBtn').addEventListener('click',()=>{
+ cake.classList.remove('blown');hint.textContent='আবার একটি ইচ্ছে করতে পারো, নিপা! 💫';
+});
+function addPhoto(file){
+ if(!file.type.startsWith('image/'))return;
+ const url=URL.createObjectURL(file), item=document.createElement('div');item.className='photo';
+ const img=document.createElement('img');img.src=url;img.alt='নিপার স্মৃতির ছবি';item.appendChild(img);
+ document.getElementById('gallery').prepend(item);
+}
+document.getElementById('photoInput').addEventListener('change',e=>[...e.target.files].forEach(addPhoto));
+const music=document.getElementById('music'), musicStatus=document.getElementById('musicStatus'), musicBtn=document.getElementById('musicBtn');
+document.getElementById('musicInput').addEventListener('change',e=>{
+ const f=e.target.files[0];if(!f)return;music.src=URL.createObjectURL(f);musicStatus.textContent='নির্বাচিত গান: '+f.name;
+});
+musicBtn.addEventListener('click',async()=>{
+ if(!music.src){musicStatus.textContent='আগে একটি MP3 ফাইল বেছে নাও।';return}
+ if(music.paused){try{await music.play();musicBtn.textContent='গান থামাও ⏸'}catch(e){musicStatus.textContent='গান চালু করা যায়নি। আবার চেষ্টা করো।'}}
+ else{music.pause();musicBtn.textContent='গান চালু করো ▶'}
+});
+let heartsTimer=setInterval(()=>{
+ const h=document.createElement('div');h.className='float-heart';h.textContent=['💗','💕','💖','✨','🌸'][Math.floor(Math.random()*5)];
+ h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*22)+'px';h.style.animationDuration=(6+Math.random()*5)+'s';
+ document.body.appendChild(h);setTimeout(()=>h.remove(),12000);
+},850);
+
+// Lightweight canvas confetti/fireworks effect; no external library required.
+const canvas=document.getElementById('confetti'),ctx=canvas.getContext('2d');let bits=[];
+function resize(){canvas.width=innerWidth*devicePixelRatio;canvas.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
+addEventListener('resize',resize);resize();
+function burst(){
+ const colors=['#ff7eb9','#ffd166','#c9a0ff','#fff1f8','#a8e6cf'];
+ for(let i=0;i<150;i++){const a=Math.random()*Math.PI*2,s=2+Math.random()*7;bits.push({x:innerWidth/2,y:innerHeight*.45,vx:Math.cos(a)*s,vy:Math.sin(a)*s-2,life:90+Math.random()*35,size:3+Math.random()*5,color:colors[Math.floor(Math.random()*colors.length)],rot:Math.random()*6})}
+}
+function animate(){
+ ctx.clearRect(0,0,innerWidth,innerHeight);
+ bits=bits.filter(b=>b.life>0);
+ for(const b of bits){b.x+=b.vx;b.y+=b.vy;b.vy+=.08;b.vx*=.99;b.life--;b.rot+=.1;ctx.save();ctx.translate(b.x,b.y);ctx.rotate(b.rot);ctx.fillStyle=b.color;ctx.globalAlpha=Math.min(1,b.life/25);ctx.fillRect(-b.size/2,-b.size/2,b.size,b.size*1.5);ctx.restore()}
+ requestAnimationFrame(animate);
+}
+animate();
+setTimeout(burst,900);
+</script>
+</body>
+</html>
